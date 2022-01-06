@@ -16,7 +16,7 @@ token = os.environ.get("BOT_TOKEN", None)
 lnbot = TelegramClient("legendboy", API_ID, API_HASH).start(bot_token=token)
 
 
-class LegendBoy(TelegramClient):
+class chesspower in me(TelegramClient):
     def __init__(self, string, api_id, api_hash):
         super().__init__(StringSession(string), api_id, api_hash)
         self.id = None
@@ -46,9 +46,9 @@ Your heroku bot username is {self.heroku_username}"""
         return detail
 
 
-if Config.LEGEND_STRING:
-    session_name = str(Config.LEGEND_STRING)
-    sweetie = LegendBoy(session_name, Config.APP_ID, Config.API_HASH)
+if Config.DARK_STRING:
+    session_name = str(Config.DARK_STRING)
+    sweetie = Chess power in me(session_name, Config.APP_ID, Config.API_HASH)
 else:
     session_name = "startup"
     bbbot = TelegramClient(session_name, Config.APP_ID, Config.API_HASH)
